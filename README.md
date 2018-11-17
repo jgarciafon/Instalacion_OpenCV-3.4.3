@@ -23,7 +23,7 @@ sh download_OpenCV_source.sh
 ```
 # 4.1 Configura el entorno de python
 ```
-sh setup_python_environmebt.sh
+sh setup_python_environment.sh
 ```
 Cierra el terminal.
 # 4.2 Instala un entorno virtual para python 3.5
