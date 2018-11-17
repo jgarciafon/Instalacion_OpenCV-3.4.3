@@ -35,4 +35,27 @@ Para comporbar que se ha instalado correctamente, se cierra el terminal y se abr
 workon cv
 pip install numpy scipy matplotlib scikit-image scikit-learn ipython
 ```
-
+# 5 Configura y compila OpenCV3
+Comprueba de que sigues dentro del entorno virtual
+```
+cd ~/opencv-3.4.3./
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+    -D CMAKE_INSTALL_PREFIX=/usr/local \
+    -D INSTALL_PYTHON_EXAMPLES=ON \
+    -D INSTALL_C_EXAMPLES=ON \
+    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.4.3/modules \
+    -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python \
+    -D BUILD_EXAMPLES=ON ..
+```
+Se compila
+```
+make clean
+make
+```
+Tardará aproximadamente 40 minutos en un ordenador promedio o 2 horas en una RP3
+```
+sudo make install
+sudo ldconfig
+```
