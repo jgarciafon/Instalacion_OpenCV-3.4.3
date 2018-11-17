@@ -38,7 +38,7 @@ pip install numpy scipy matplotlib scikit-image scikit-learn ipython
 # 5 Configura y compila OpenCV3
 Comprueba de que sigues dentro del entorno virtual
 ```
-cd ~/opencv-3.4.3./
+cd ~/opencv-3.4.3
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
