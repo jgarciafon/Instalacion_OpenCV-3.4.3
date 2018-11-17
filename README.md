@@ -59,3 +59,25 @@ Tardará aproximadamente 40 minutos en un ordenador promedio o 2 horas en una RP
 sudo make install
 sudo ldconfig
 ```
+# 6. Finalizar la instalcion
+```
+cd /usr/local/lib/python3.5/site-packages/
+sudo mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+cd ~/.virtualenvs/cv/lib/python3.5/site-packages/
+ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
+```
+# 7. Comprobar el funcionamiento
+Acceso y salida del entorno virtual
+```
+# Para entrar en el entorno virtual
+workon cv
+# Para salir del entorno virtual
+deactivate
+```
+Comprobar version OpenCV3
+```
+# Entrar 
+workon cv
+# Para salir del entorno virtual
+deactivate
+```
