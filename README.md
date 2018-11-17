@@ -96,3 +96,13 @@ make removeRedEyes
 ./removeRedEyes
 make clean
 ```
+# 8. Instalar IDE PyCharm
+```
+sudo apt install snapd snapd-xdg-open
+sudo snap install pycharm-community --classic
+pycharm-community
+```
+## 8.1 Abrir proyecto y que se sincronice con el entorno virtual
+Al crear un nuevo proyecto hay que elegir 2 cosas.
+- La localizacion del proyecto.
+- La localizacion del interprete. En este hay que seleccionar un interprete existente con esta ubicacion: '~/.virtualenvs/cv/bin/python3.5' para que se pueda conectar al entorno virtual que se creo en el punto 4.2
