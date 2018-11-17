@@ -1,6 +1,10 @@
 # OpenCV-3.4.3
 https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/
 
+# 0. Descargar proyecto
+```
+git clone 
+```
 # 1. Actualizar los paquetes
 ```
 sudo apt-get update
