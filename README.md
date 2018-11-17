@@ -82,6 +82,18 @@ import cv2
 cv2.__version__
 ```
 Tendria que poner '3.4.3'. Para salir del editor Ctrl+D
+## 7.1. Probar el ejemplo en python3
+```
+cd ~/Instalacion_OpenCV-3.4.3/RedEyeRemover/python
+python removeRedEyes.py
+```
+## 7.2. Probar el ejemplo en C++
+```
+cd ~/Instalacion_OpenCV-3.4.3/RedEyeRemover/cpp
+make removeRedEyes
+./removeRedEyes
+make clean
+```
 # 8. Eliminar los archivos utilizador
 ```
 cd ~
