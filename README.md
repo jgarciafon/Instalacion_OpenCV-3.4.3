@@ -76,8 +76,14 @@ deactivate
 ```
 Comprobar version OpenCV3
 ```
-# Entrar 
-workon cv
-# Para salir del entorno virtual
-deactivate
+# Dentro del entorno virtual de python
+python
+import cv2
+cv2.__version__
+```
+Tendria que poner '3.4.3'. Para salir del editor Ctrl+D
+# 8. Eliminar los archivos utilizador
+```
+cd ~
+rm -rf opencv-3.4.3 opencv_contrib-3.4.3
 ```
