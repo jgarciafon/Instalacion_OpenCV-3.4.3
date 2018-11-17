@@ -59,7 +59,7 @@ Tardará aproximadamente 40 minutos en un ordenador promedio o 2 horas en una RP
 sudo make install
 sudo ldconfig
 ```
-# 6. Finalizar la instalcion
+# 6. Finalizar la instalacion
 ```
 cd /usr/local/lib/python3.5/site-packages/
 sudo mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
