@@ -65,6 +65,8 @@ cd /usr/local/lib/python3.5/site-packages/
 sudo mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
 cd ~/.virtualenvs/cv/lib/python3.5/site-packages/
 ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
+cd ~
+rm -rf opencv-3.4.3 opencv_contrib-3.4.3
 ```
 # 7. Comprobar el funcionamiento
 Acceso y salida del entorno virtual
@@ -93,9 +95,4 @@ cd ~/Instalacion_OpenCV-3.4.3/RedEyeRemover/cpp
 make removeRedEyes
 ./removeRedEyes
 make clean
-```
-# 8. Eliminar los archivos utilizador
-```
-cd ~
-rm -rf opencv-3.4.3 opencv_contrib-3.4.3
 ```
