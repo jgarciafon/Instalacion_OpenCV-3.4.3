@@ -3,7 +3,9 @@ https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/
 
 # 0. Descargar proyecto
 ```
-git clone 
+mkdir tutorial_install_opencv3
+cd tutorial_install_opencv3
+git clone https://github.com/jgarciafon/Instalacion_OpenCV-3.4.3.git
 ```
 # 1. Actualizar los paquetes
 ```
@@ -19,4 +21,5 @@ Se descargará la version 3.4.3
 ```
 sh download_OpenCV_source.sh
 ```
+
 
