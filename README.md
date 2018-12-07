@@ -33,7 +33,7 @@ Instalar paquetes de python para OpenCV
 ```
 sudo pip install numpy scipy matplotlib scikit-image scikit-learn ipython
 ```
-# 5 Configura y compila OpenCV3
+## Configura y compila OpenCV3
 Comprueba de que sigues dentro del entorno virtual
 ```
 cd ~/opencv-3.4.3
@@ -57,6 +57,7 @@ Tardará aproximadamente 40 minutos en un ordenador promedio o 2 horas en una RP
 sudo make install
 sudo ldconfig
 ```
+Ir al punto 7 sin entrar en el entorno virtual
 # Con entorno virtual
 # 4.1 Configura el entorno de python
 ```
