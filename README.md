@@ -21,6 +21,43 @@ Se descargará la version 3.4.3
 ```
 sh download_OpenCV_source.sh
 ```
+# Sin entorno virtual
+Instalar pip
+```
+cd ~
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+sudo rm -rf ~/get-pip.py ~/.cache/pip
+```
+Instalar paquetes de python para OpenCV
+```
+sudo pip install numpy scipy matplotlib scikit-image scikit-learn ipython
+```
+# 5 Configura y compila OpenCV3
+Comprueba de que sigues dentro del entorno virtual
+```
+cd ~/opencv-3.4.3
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+    -D CMAKE_INSTALL_PREFIX=/usr/local \
+    -D INSTALL_PYTHON_EXAMPLES=ON \
+    -D INSTALL_C_EXAMPLES=ON \
+    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.4.3/modules \
+    -D PYTHON_EXECUTABLE=~/usr/bin/python3 \
+    -D BUILD_EXAMPLES=ON ..
+```
+Se compila
+```
+make clean
+make
+```
+Tardará aproximadamente 40 minutos en un ordenador promedio o 2 horas en una RP3
+```
+sudo make install
+sudo ldconfig
+```
+# Con entorno virtual
 # 4.1 Configura el entorno de python
 ```
 sh setup_python_environment.sh
