@@ -31,7 +31,7 @@ sudo rm -rf ~/get-pip.py ~/.cache/pip
 ```
 Instalar paquetes de python para OpenCV
 ```
-sudo pip install numpy scipy matplotlib scikit-image scikit-learn ipython
+sudo pip3 install numpy scipy matplotlib scikit-image scikit-learn ipython
 ```
 ## Configura y compila OpenCV3
 Comprueba de que sigues dentro del entorno virtual
