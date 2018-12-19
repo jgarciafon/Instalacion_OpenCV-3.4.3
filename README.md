@@ -26,7 +26,7 @@ Instalar pip
 ```
 cd ~
 wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
+sudo python3 get-pip.py
 sudo rm -rf ~/get-pip.py ~/.cache/pip
 ```
 Instalar paquetes de python para OpenCV
