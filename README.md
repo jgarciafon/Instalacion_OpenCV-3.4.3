@@ -58,7 +58,7 @@ sudo make install
 sudo ldconfig
 ```
 ```
-cd /usr/local/lib/python3.5/site-packages/
+cd /usr/local/lib/python3.5/dist-packages/
 sudo mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
 ```
 Ir al punto 7 sin entrar en el entorno virtual
